@@ -41,7 +41,7 @@
       "id": "d5ac8346-16a4-47d8-b7f0-4e4a42be8fcc",
       "site_id": "4fafcd74-7ba1-48a2-937f-4a46a5010c37",
       "name": "Default Theme",
-      "primary_color": "#eaf73b",
+      "primary_color": "#2563eb",
       "primary_hover": "#2563eb",
       "secondary": "#f97316",
       "secondary_hover": "#ea580c",
@@ -72,7 +72,7 @@
             "id": "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
             "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
             "type": "header",
-            "variant": "3",
+            "variant": "1",
             "position": 1,
             "is_active": true,
             "content": {

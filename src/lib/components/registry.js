@@ -57,6 +57,26 @@ export const componentRegistry = {
           position: { type: "number", label: "Display Order" },
         },
       },
+      4: {
+        name: "Responsive Header",
+        description: "Mobile-friendly header with dynamic links and actions",
+        thumbnail: "/thumbnails/header-3.png",
+        schema: {
+          title: { type: "text", label: "Logo / Brand Text" },
+          cta_text: { type: "text", label: "CTA Button Text" },
+          cta_link: { type: "text", label: "CTA Button Link (e.g., tel:)" },
+          image_url: { type: "image", label: "Logo Image (optional)" },
+        },
+        itemSchema: {
+          title: {
+            type: "text",
+            required: true,
+            label: "Navigation Link Text",
+          },
+          cta_link: { type: "text", required: true, label: "Navigation URL" },
+          position: { type: "number", label: "Display Order" },
+        },
+      },
     },
   },
   hero: {
