@@ -6,28 +6,16 @@ import dynamic from "next/dynamic";
 
 // Dynamic component map for section types and variants - moved to client component
 const SECTION_MAP = {
-  header_1: dynamic(() => import("@/components/sections/Header1")),
-  header_2: dynamic(() => import("@/components/sections/Header2")),
-  header_3: dynamic(() => import("@/components/sections/Header3")),
-  hero_1: dynamic(() => import("@/components/sections/Hero1")),
-  hero_2: dynamic(() => import("@/components/sections/Hero2")),
-  about_1: dynamic(() => import("@/components/sections/About1")),
-  services_1: dynamic(() => import("@/components/sections/Services1")),
-  testimonial_1: dynamic(() => import("@/components/sections/Testimonial1")),
-  faq_1: dynamic(() => import("@/components/sections/FAQ1")),
-  contact_1: dynamic(() => import("@/components/sections/Contact1")),
-  footer_1: dynamic(() => import("@/components/sections/Footer1")),
-  footer_2: dynamic(() => import("@/components/sections/Footer2")),
-  gallery_1: dynamic(() => import("@/components/sections/Gallery1")),
-  gallery_2: dynamic(() => import("@/components/sections/Gallery2")),
-  features_1: dynamic(() => import("@/components/sections/Features1")),
-  features_2: dynamic(() => import("@/components/sections/Features2")),
-  pricing_1: dynamic(() => import("@/components/sections/Pricing1")),
-  pricing_2: dynamic(() => import("@/components/sections/Pricing2")),
-  cta_1: dynamic(() => import("@/components/sections/CTA1")),
-  cta_2: dynamic(() => import("@/components/sections/CTA2")),
-  team_1: dynamic(() => import("@/components/sections/Team1")),
-  team_2: dynamic(() => import("@/components/sections/Team2")),
+  header_1: dynamic(() => import("@/components/sections/VijayKumarOrsuHeader1")),
+  hero_1: dynamic(() => import("@/components/sections/VijayKumarOrsuHero")),
+  about_1: dynamic(() => import("@/components/sections/VijayKumarOrsuAbout")),
+  services_1: dynamic(() => import("@/components/sections/VijayKumarOrsuServices")),
+  testimonial_1: dynamic(() => import("@/components/sections/VijayKumarOrsuTestimonial1")),
+  contact_1: dynamic(() => import("@/components/sections/VijayKumarOrsuContact")),
+  footer_1: dynamic(() => import("@/components/sections/VijayKumarOrsuFooter")),
+  gallery_1: dynamic(() => import("@/components/sections/VijayKumarOrsuGallery1")),
+  pricing_1: dynamic(() => import("@/components/sections/VijayKumarOrsuPricing1")),
+  team_1: dynamic(() => import("@/components/sections/VijayKumarOrsuTeam1")),
 };
 
 export default function PageContent({ page, sections, theme, config }) {

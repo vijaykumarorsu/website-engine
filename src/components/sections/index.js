@@ -2,24 +2,24 @@
 import Header1 from './Header1';
 import Header2 from './Header2';
 import Header3 from './Header3';
-import Hero1 from './Hero1';
+import Hero1 from './VijayKumarOrsuHero';
 import Hero2 from './Hero2';
-import About1 from './About1';
-import Services1 from './Services1';
-import Testimonial1 from './Testimonial1';
+import About1 from './VijayKumarOrsuAbout';
+import Services1 from './VijayKumarOrsuServices';
+import Testimonial1 from './VijayKumarOrsuTestimonial1';
 import FAQ1 from './FAQ1';
-import Contact1 from './Contact1';
-import Footer1 from './Footer1';
+import Contact1 from './VijayKumarOrsuContact';
+import Footer1 from './VijayKumarOrsuFooter';
 import Footer2 from './Footer2';
-import Gallery1 from './Gallery1';
+import Gallery1 from './VijayKumarOrsuGallery1';
 import Gallery2 from './Gallery2';
 import Features1 from './Features1';
 import Features2 from './Features2';
-import Pricing1 from './Pricing1';
+import Pricing1 from './VijayKumarOrsuPricing1';
 import Pricing2 from './Pricing2';
 import CTA1 from './CTA1';
 import CTA2 from './CTA2';
-import Team1 from './Team1';
+import Team1 from './VijayKumarOrsuTeam1';
 import Team2 from './Team2';
 
 // Map component keys to their respective React components
@@ -48,7 +48,7 @@ export const componentMap = {
   gallery_1: Gallery1,
   gallery_2: Gallery2,
   // Features
-  features_1: Features1, 
+  features_1: Features1,
   features_2: Features2,
   // Pricing
   pricing_1: Pricing1,
@@ -65,4 +65,4 @@ export const componentMap = {
 export const getComponent = (type, variant) => {
   const key = `${type}_${variant}`;
   return componentMap[key] || null;
-}; 
+};

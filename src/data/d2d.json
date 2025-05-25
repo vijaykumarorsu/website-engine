@@ -92,7 +92,7 @@
             "id": "d7592df9-ae00-40a2-bdc5-fdddf326e59a",
             "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
             "type": "hero",
-            "variant": "2",
+            "variant": "1",
             "position": 2,
             "is_active": true,
             "content": {
@@ -255,11 +255,53 @@
             ]
           },
           {
+            "id": "team-section",
+            "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
+            "type": "team",
+            "variant": "1",
+            "position": 5,
+            "is_active": true,
+            "content": {
+              "title": "Meet Our Team",
+              "subtitle": "Skilled Professionals",
+              "description": "Our talented barbers and stylists are here to provide you with exceptional service."
+            },
+            "items": []
+          },
+          {
+            "id": "gallery-section",
+            "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
+            "type": "gallery",
+            "variant": "1",
+            "position": 5,
+            "is_active": true,
+            "content": {
+              "title": "Gallery",
+              "subtitle": "A glimpse of our shop",
+              "description": ""
+            },
+            "items": []
+          },
+          {
+            "id": "contact-section",
+            "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
+            "type": "contact",
+            "variant": "1",
+            "position": 6,
+            "is_active": true,
+            "content": {
+              "address": "5801 Long Prairie Rd Suite 840, Flower Mound, TX 75028",
+              "phone": "+1 (972) 284-5277",
+              "email": "info@melsbarbershop.com"
+            },
+            "items": []
+          },
+          {
             "id": "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
             "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
             "type": "footer",
             "variant": "1",
-            "position": 6,
+            "position": 7,
             "is_active": true,
             "content": {
               "id": "0c6e2e4e-78dd-4e53-b5f6-2c9b793feccc",
