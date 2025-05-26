@@ -196,22 +196,39 @@ export async function fetchPageData(subdomain, slug = "home") {
       throw new Error("Site not found");
     }
 
+    // Debug logging
+    console.log('Available pages:', Object.keys(data.pages));
+
     // Verify page exists
     const page = data.pages[slug];
     if (!page) {
+      console.error(`Page not found for slug: ${slug}`);
       throw new Error("Page not found");
     }
+
+    // Debug logging
+    console.log('Raw page data:', page);
 
     // Extract the data we need
     const { sections, ...pageData } = page;
     
+    // Debug logging
+    console.log('Processed sections:', sections);
+
+    // Ensure sections are properly formatted
+    const formattedSections = sections.map(section => ({
+      ...section,
+      type: section.type.toLowerCase(),
+      variant: section.variant.toString()
+    }));
+
     return {
       site: data.site,
       siteMeta: data.siteMeta,
       config: data.config,
       theme: data.theme,
       page: pageData,
-      sections: sections || [],
+      sections: formattedSections || [],
     };
   } catch (error) {
     console.error("Error fetching page data:", error);

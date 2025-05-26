@@ -107,6 +107,13 @@ export default async function SubdomainPage({ params }) {
       sections: sectionsWithData,
     } = await fetchPageData(subdomain, slug);
 
+    // Debug logging
+    console.log('Fetched page data:', {
+      page,
+      sectionsCount: sectionsWithData?.length,
+      firstSection: sectionsWithData?.[0]
+    });
+
     if (!page) {
       return notFound();
     }
@@ -140,6 +147,13 @@ export default async function SubdomainPage({ params }) {
         type: section.type,
         variant: section.variant,
       };
+    });
+
+    // Debug logging for mock data
+    console.log('Using mock data:', {
+      page,
+      sectionsCount: sectionsWithData?.length,
+      firstSection: sectionsWithData?.[0]
     });
 
     // Use mock data in client component

@@ -1,18 +1,18 @@
 'use client';
+
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 
-export default function VijayKumarOrsuHeader() {
+function Header({ content = {} }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { label: 'About', href: '#about' },
+    { label: 'Home', href: '/' },
     { label: 'Services', href: '#services' },
-    { label: 'Gallery', href: '#gallery' },
     { label: 'Team', href: '#team' },
-    { label: 'Testimonials', href: '#testimonials' },
+    { label: 'Gallery', href: '#gallery' },
     { label: 'Contact', href: '#contact' }
   ];
 
@@ -20,14 +20,18 @@ export default function VijayKumarOrsuHeader() {
     <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/">
+        <Link href="/" className="flex items-center">
           <Image
-            src="/logo.png"
-            alt="Mel's Barber Shop"
+            src={content.image_url || '/logo.png'}
+            alt={content.title || "Mel's Barber Shop"}
             width={40}
             height={50}
             className="h-auto w-auto object-contain"
+            priority
           />
+          <span className="ml-2 text-lg font-semibold text-gray-800">
+            {content.title || "Mel's Barber Shop"}
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -36,7 +40,7 @@ export default function VijayKumarOrsuHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="hover:text-yellow-600 transition"
+              className="hover:text-yellow-600 transition-colors duration-200"
             >
               {item.label}
             </Link>
@@ -44,11 +48,13 @@ export default function VijayKumarOrsuHeader() {
         </nav>
 
         {/* Mobile Hamburger */}
-        <div className="md:hidden">
-          <button onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
+        <button 
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden p-2 hover:bg-gray-100 rounded-md"
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
       </div>
 
       {/* Mobile Menu */}
@@ -59,7 +65,7 @@ export default function VijayKumarOrsuHeader() {
               key={item.href}
               href={item.href}
               onClick={() => setMenuOpen(false)}
-              className="block py-2 text-gray-700 hover:text-yellow-600"
+              className="block py-2 text-gray-700 hover:text-yellow-600 transition-colors duration-200"
             >
               {item.label}
             </Link>
@@ -69,3 +75,5 @@ export default function VijayKumarOrsuHeader() {
     </header>
   );
 }
+
+export default Header;

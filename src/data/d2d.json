@@ -78,12 +78,12 @@
             "content": {
               "id": "9b742a78-b86f-4a6a-9f0c-f39747ec5d3f",
               "section_id": "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
-              "title": "New Section",
-              "subtitle": "Subtitle",
-              "description": "Description for the new section",
-              "image_url": "https://i.ibb.co/2LcZ3BQ/logo.webp",
+              "title": "Mel's Barber Shop",
+              "subtitle": "Premium Haircuts & Grooming",
+              "description": "Professional barber shop services for modern gentlemen",
+              "image_url": "/logo.png",
               "background_url": null,
-              "cta_text": "Get Started",
+              "cta_text": "Book Now",
               "cta_link": "/contact"
             },
             "items": []
@@ -98,12 +98,12 @@
             "content": {
               "id": "a6aa9cff-ca3a-47f2-934d-7a0e4fc0fcf3",
               "section_id": "d7592df9-ae00-40a2-bdc5-fdddf326e59a",
-              "title": "Build Beautiful barber shop",
-              "subtitle": "Modern Web Development",
-              "description": "Our modular website builder allows you to create stunning websites with ease. No coding required.",
-              "image_url": "https://i.ibb.co/2LcZ3BQ/logo.webp",
+              "title": "Timeless Style at Mel's Barber Shop",
+              "subtitle": "Premium Haircuts & Grooming",
+              "description": "Professional barber shop services for modern gentlemen. Book your appointment today!",
+              "image_url": "/hero-image.jpg",
               "background_url": null,
-              "cta_text": "Get Started",
+              "cta_text": "Book Appointment",
               "cta_link": "/contact"
             },
             "items": []
@@ -120,7 +120,7 @@
               "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
               "title": "Our Services",
               "subtitle": "What We Offer",
-              "description": "We provide a range of services to help your business grow online.",
+              "description": "Professional grooming services tailored to your style",
               "image_url": null,
               "background_url": null,
               "cta_text": "View All Services",
@@ -130,126 +130,37 @@
               {
                 "id": "697983ce-5f8b-46db-89be-22e6471f3f5a",
                 "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
-                "title": "Web Development",
-                "subtitle": "Custom Solutions",
-                "description": "We build responsive, fast-loading websites that look great on any device.",
-                "icon": "code",
-                "image_url": "https://via.placeholder.com/400x300",
-                "rating": null,
-                "price": null,
-                "duration": null,
-                "tag": null,
+                "title": "Haircut",
+                "subtitle": "Precision Cuts",
+                "description": "Professional haircuts tailored to your style and preferences",
+                "icon": "scissors",
+                "image_url": "/service-haircut.jpg",
+                "price": "$25",
+                "duration": "30 min",
                 "position": 0
               },
               {
                 "id": "8838565f-e964-40be-b8b8-5c0e38180d80",
                 "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
-                "title": "E-commerce",
-                "subtitle": "Online Stores",
-                "description": "Create your online store with secure payment processing and inventory management.",
-                "icon": "search",
-                "image_url": "https://via.placeholder.com/400x300",
-                "rating": null,
-                "price": null,
-                "duration": null,
-                "tag": null,
+                "title": "Beard Trim",
+                "subtitle": "Sharp Lines",
+                "description": "Expert beard trimming and shaping for a polished look",
+                "icon": "razor",
+                "image_url": "/service-beard.jpg",
+                "price": "$15",
+                "duration": "20 min",
                 "position": 1
               },
               {
                 "id": "19d93208-162d-46b8-a57c-69294d21ab14",
                 "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
-                "title": "SEO Optimization",
-                "subtitle": "Improve Rankings",
-                "description": "Enhance your online presence with our search engine optimization services.",
-                "icon": "share",
-                "image_url": "https://via.placeholder.com/400x300",
-                "rating": null,
-                "price": null,
-                "duration": null,
-                "tag": null,
-                "position": 2
-              }
-            ]
-          },
-          {
-            "id": "53760ad3-06dc-43f9-ad66-c42937f90aeb",
-            "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
-            "type": "about",
-            "variant": "1",
-            "position": 3,
-            "is_active": true,
-            "content": {
-              "id": "c401e429-d283-45bb-948d-4b4485b97e6c",
-              "section_id": "53760ad3-06dc-43f9-ad66-c42937f90aeb",
-              "title": "New Section",
-              "subtitle": "Subtitle",
-              "description": "Description for the new section",
-              "image_url": null,
-              "background_url": null,
-              "cta_text": null,
-              "cta_link": null
-            },
-            "items": []
-          },
-          {
-            "id": "8453573e-d3e7-4e95-8057-9a3d7b8a5eed",
-            "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
-            "type": "testimonial",
-            "variant": "1",
-            "position": 4,
-            "is_active": true,
-            "content": {
-              "id": "48813f16-3aea-471a-8df6-b3f999c5617d",
-              "section_id": "8453573e-d3e7-4e95-8057-9a3d7b8a5eed",
-              "title": "Customer Testimonials",
-              "subtitle": "What Our Clients Say",
-              "description": "Hear from our satisfied customers about their experience working with us.",
-              "image_url": null,
-              "background_url": null,
-              "cta_text": null,
-              "cta_link": null
-            },
-            "items": [
-              {
-                "id": "574ffd62-8291-4c24-9996-0022ae00bb93",
-                "section_id": "8453573e-d3e7-4e95-8057-9a3d7b8a5eed",
-                "title": "John Smith",
-                "subtitle": "CEO, TechStart",
-                "description": "Working with this team has been an incredible experience. Their attention to detail and commitment to excellence is unmatched.",
-                "icon": null,
-                "image_url": "https://via.placeholder.com/100x100",
-                "rating": 5,
-                "price": null,
-                "duration": null,
-                "tag": null,
-                "position": 0
-              },
-              {
-                "id": "8f60eb15-48cb-4332-9eb8-069c06116102",
-                "section_id": "8453573e-d3e7-4e95-8057-9a3d7b8a5eed",
-                "title": "Sarah Johnson",
-                "subtitle": "Marketing Director",
-                "description": "I was amazed at how quickly they understood our brand and delivered exactly what we needed. Highly recommended!",
-                "icon": null,
-                "image_url": "https://via.placeholder.com/100x100",
-                "rating": 5,
-                "price": null,
-                "duration": null,
-                "tag": null,
-                "position": 1
-              },
-              {
-                "id": "350c0ae3-a23d-4f07-988d-cc5d384732f7",
-                "section_id": "8453573e-d3e7-4e95-8057-9a3d7b8a5eed",
-                "title": "Michael Brown",
-                "subtitle": "Small Business Owner",
-                "description": "Their work helped transform my business. Professional, responsive, and truly talented team.",
-                "icon": null,
-                "image_url": "https://via.placeholder.com/100x100",
-                "rating": 4,
-                "price": null,
-                "duration": null,
-                "tag": null,
+                "title": "Hot Towel Shave",
+                "subtitle": "Classic Experience",
+                "description": "Traditional hot towel shave for the ultimate grooming experience",
+                "icon": "towel",
+                "image_url": "/service-shave.jpg",
+                "price": "$35",
+                "duration": "45 min",
                 "position": 2
               }
             ]
@@ -259,14 +170,41 @@
             "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
             "type": "team",
             "variant": "1",
-            "position": 5,
+            "position": 4,
             "is_active": true,
             "content": {
+              "id": "team-content-1",
+              "section_id": "team-section",
               "title": "Meet Our Team",
               "subtitle": "Skilled Professionals",
-              "description": "Our talented barbers and stylists are here to provide you with exceptional service."
+              "description": "Our talented barbers and stylists are here to provide you with exceptional service"
             },
-            "items": []
+            "items": [
+              {
+                "id": "team-1",
+                "section_id": "team-section",
+                "name": "Mel",
+                "role": "Master Barber",
+                "image_url": "/team1.jpg",
+                "position": 0
+              },
+              {
+                "id": "team-2",
+                "section_id": "team-section",
+                "name": "Jared",
+                "role": "Stylist",
+                "image_url": "/team2.jpg",
+                "position": 1
+              },
+              {
+                "id": "team-3",
+                "section_id": "team-section",
+                "name": "Tina",
+                "role": "Shave Specialist",
+                "image_url": "/team3.jpg",
+                "position": 2
+              }
+            ]
           },
           {
             "id": "gallery-section",
@@ -276,11 +214,42 @@
             "position": 5,
             "is_active": true,
             "content": {
+              "id": "gallery-content-1",
+              "section_id": "gallery-section",
               "title": "Gallery",
-              "subtitle": "A glimpse of our shop",
-              "description": ""
+              "subtitle": "Our Work",
+              "description": "A glimpse of our shop and happy customers"
             },
-            "items": []
+            "items": [
+              {
+                "id": "gallery-1",
+                "section_id": "gallery-section",
+                "image_url": "/gallery-1.jpg",
+                "alt": "Barber Shop Interior",
+                "position": 0
+              },
+              {
+                "id": "gallery-2",
+                "section_id": "gallery-section",
+                "image_url": "/gallery-2.jpg",
+                "alt": "Haircut Service",
+                "position": 1
+              },
+              {
+                "id": "gallery-3",
+                "section_id": "gallery-section",
+                "image_url": "/gallery-3.jpg",
+                "alt": "Beard Trim Service",
+                "position": 2
+              },
+              {
+                "id": "gallery-4",
+                "section_id": "gallery-section",
+                "image_url": "/gallery-4.jpg",
+                "alt": "Customer Experience",
+                "position": 3
+              }
+            ]
           },
           {
             "id": "contact-section",
@@ -290,6 +259,11 @@
             "position": 6,
             "is_active": true,
             "content": {
+              "id": "contact-content-1",
+              "section_id": "contact-section",
+              "title": "Contact Us",
+              "subtitle": "Get in Touch",
+              "description": "Book your appointment or reach out to us",
               "address": "5801 Long Prairie Rd Suite 840, Flower Mound, TX 75028",
               "phone": "+1 (972) 284-5277",
               "email": "info@melsbarbershop.com"
@@ -297,22 +271,18 @@
             "items": []
           },
           {
-            "id": "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
+            "id": "footer-section",
             "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
             "type": "footer",
             "variant": "1",
             "position": 7,
             "is_active": true,
             "content": {
-              "id": "0c6e2e4e-78dd-4e53-b5f6-2c9b793feccc",
-              "section_id": "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
-              "title": "New Section",
-              "subtitle": "Subtitle",
-              "description": "Description for the new section",
-              "image_url": null,
-              "background_url": null,
-              "cta_text": null,
-              "cta_link": null
+              "id": "footer-content-1",
+              "section_id": "footer-section",
+              "title": "Mel's Barber Shop",
+              "description": "Professional grooming services for modern gentlemen",
+              "copyright": "All rights reserved"
             },
             "items": []
           }

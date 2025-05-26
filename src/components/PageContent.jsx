@@ -1,21 +1,17 @@
 "use client";
 
 import { useApp } from "@/contexts/AppContext";
-import { getComponentKey } from "@/lib/components/registry";
 import dynamic from "next/dynamic";
 
 // Dynamic component map for section types and variants - moved to client component
 const SECTION_MAP = {
   header_1: dynamic(() => import("@/components/sections/VijayKumarOrsuHeader1")),
   hero_1: dynamic(() => import("@/components/sections/VijayKumarOrsuHero")),
-  about_1: dynamic(() => import("@/components/sections/VijayKumarOrsuAbout")),
   services_1: dynamic(() => import("@/components/sections/VijayKumarOrsuServices")),
-  testimonial_1: dynamic(() => import("@/components/sections/VijayKumarOrsuTestimonial1")),
+  team_1: dynamic(() => import("@/components/sections/VijayKumarOrsuTeam1")),
+  gallery_1: dynamic(() => import("@/components/sections/VijayKumarOrsuGallery1")),
   contact_1: dynamic(() => import("@/components/sections/VijayKumarOrsuContact")),
   footer_1: dynamic(() => import("@/components/sections/VijayKumarOrsuFooter")),
-  gallery_1: dynamic(() => import("@/components/sections/VijayKumarOrsuGallery1")),
-  pricing_1: dynamic(() => import("@/components/sections/VijayKumarOrsuPricing1")),
-  team_1: dynamic(() => import("@/components/sections/VijayKumarOrsuTeam1")),
 };
 
 export default function PageContent({ page, sections, theme, config }) {
@@ -25,12 +21,27 @@ export default function PageContent({ page, sections, theme, config }) {
   // Merge provided theme with context theme, with context taking precedence
   const themeToUse = { ...theme, ...(contextTheme || {}) };
 
+  // Debug logging
+  console.log('PageContent received sections:', sections);
+
   return (
     <main>
       <h1 className="sr-only">{page.title}</h1>
       {sections.map((section) => {
-        const sectionKey = getComponentKey(section.type, section.variant);
+        // Get the component using the original type and variant format
+        const sectionKey = `${section.type}_${section.variant}`;
         const DynamicSection = SECTION_MAP[sectionKey];
+
+        // Debug logging
+        console.log('Processing section:', {
+          id: section.id,
+          type: section.type,
+          variant: section.variant,
+          key: sectionKey,
+          hasComponent: !!DynamicSection,
+          content: section.content,
+          items: section.items
+        });
 
         if (!DynamicSection) {
           console.warn(`No component found for section type: ${sectionKey}`);

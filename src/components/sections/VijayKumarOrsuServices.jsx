@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const services = [
   { title: "Haircut", desc: "Precision cuts tailored to your style.", img: "service-haircut.jpg" },
   { title: "Beard Trim", desc: "Sharp trims & beard shaping.", img: "service-beard.jpg" },
